@@ -1,5 +1,6 @@
 import Food from "./Food";
 import './App.css';
+import Navbar from "./Navbar";
 function App() {
   let foods = [
     {
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <>
+    <Navbar />
     <center><h2>Foodie Adda</h2></center>
       <Food date = {foods[0].date} title ={foods[0].title} price = {foods[0].price} />
       <Food date = {foods[1].date} title ={foods[1].title} price = {foods[1].price} />
