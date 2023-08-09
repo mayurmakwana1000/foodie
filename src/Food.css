@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(18, 231, 160);
+    color: white;
+}
+.food_details{
+    background-color: rgb(125, 133, 129);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 45px;
+    margin: 10px;
+    padding: 1px 50px;
+    height: 70px;
+    font-size: 25px;
+
+}
+
+
