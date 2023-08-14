@@ -8,6 +8,7 @@ body{
     justify-content: space-between;
     align-items: center;
     border-radius: 45px;
+    border: 1px solid white;
     margin: 10px;
     padding: 1px 50px;
     height: 70px;

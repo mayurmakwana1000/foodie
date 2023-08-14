@@ -1,6 +1,8 @@
 import Food from "./Food";
 import './App.css';
 import Navbar from "./Navbar";
+import Form from "./Form";
+import Pizza from "./Pizza";
 function App() {
   let foods = [
     {
@@ -14,12 +16,14 @@ function App() {
       date: '2023 04 08',
       title: 'Mango',
       price: '400'
-    }, {
+    },
+    {
       id: '3',
       date: '2023 10 07',
       title: 'Apple',
       price: '150'
-    }, {
+    },
+    {
       id: '4',
       date: '2023 08 06',
       title: 'Guava',
@@ -27,13 +31,24 @@ function App() {
     }
   ];
 
+ const saveFoodData=(e)=>{
+  const FoodData2 ={
+    ...e,
+    id: Math.random().toString()
+  }
+  console.log(FoodData2);
+ };
+
   return (
     <>
     <Navbar />
-      <Food date = {foods[0].date} title ={foods[0].title} price = {foods[0].price} />
+    <center><h2>Foodie Adda</h2></center>
+    <Pizza secondFoodData ={saveFoodData}   />
+    {/* <Form /> */}
+      {/* <Food date = {foods[0].date} title ={foods[0].title} price = {foods[0].price} />
       <Food date = {foods[1].date} title ={foods[1].title} price = {foods[1].price} />
       <Food date = {foods[2].date} title ={foods[2].title} price = {foods[2].price} />
-      <Food date = {foods[3].date} title ={foods[3].title} price = {foods[3].price} />
+      <Food date = {foods[3].date} title ={foods[3].title} price = {foods[3].price} /> */}
     </>
   );
 }
